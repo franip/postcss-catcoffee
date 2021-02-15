@@ -17,14 +17,6 @@ module.exports = {
             options: { importLoaders: 1 }, // indica cuantos importLoaders se aplican antes de css-loader
           },
           'postcss-loader',
-          // {
-          //   loader: 'postcss-loader',
-          //   options: {
-          //     postcssOptions: {
-          //       plugins: [['postcss-present-env', {}]],
-          //     },
-          //   },
-          // },
         ],
       },
     ],
