@@ -1,0 +1,23 @@
+$brand: #ff0000;
+$column: 200px;
+
+body {
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.hello {
+  color: white;
+  background-color: $brand;
+  width: $column;
+}
+
+// esto es comentario gracias a postcss-scss
+.btn {
+  font-size: 1.25rem / 2;
+}
+
+.color-and-bg {
+  color: white navy;
+}
