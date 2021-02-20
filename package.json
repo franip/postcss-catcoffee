@@ -1,18 +1,20 @@
 {
   "name": "postcss-catcoffee",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "",
   "private": true,
   "author": "Francisco Ibanez Pastor <franipfp@gmail.com>",
   "license": "ISC",
   "scripts": {
     "build": "webpack",
+    "build:css": "postcss ./styles/app.css -o ./dist/app.css",
     "lint": "npx stylelint '**/*.css'"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.4",
     "css-loader": "^5.0.2",
     "postcss": "^8.2.6",
+    "postcss-cli": "^8.3.1",
     "postcss-easings": "^3.0.1",
     "postcss-import": "^14.0.0",
     "postcss-loader": "^5.0.0",
