@@ -3,19 +3,39 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PostCSS Catcoffee</title>
+  <title>PostCSS Catcoffee ahora con Tailwind CSS</title>
+
+  <link rel="stylesheet" href="./app.css">
 </head>
 <body>
-  <h1 class="hello">Hola con PostCSS</h1>
+  <div
+    class="h-screen bg-gradient-to-b from-purple-700 to-purple-900 flex flex-col items-center justify-center space-y-4"
+  >
+    <h1 class="mobile:text-lg tablet:text-2xl laptop:text-4xl desktop:text-6xl font-bold">
+      Tailwind CSS!
+    </h1>
 
-  <div>
-    <button class="btn">Soy un botón</button>
+    <h2 class="mobile:block tablet:hidden text-4xl">
+      Estoy en un móvil!
+    </h2>
+
+    <h2 class="hidden tablet:block laptop:hidden text-4xl">
+      Ahora en una tablet!
+    </h2>
+
+    <h2 class="hidden laptop:block desktop:hidden text-4xl">
+      Ahora en un portátil! (u ordenador viejo)
+    </h2>
+
+    <h2 class="hidden desktop:block text-4xl">
+      En <span class="font-bold animate-pulse">HD</span> estoy en mi salsa!
+    </h2>
+
+    <button class="hidden desktop:inline-flex btn">
+      Botón
+    </button>
   </div>
 
-  <div class="color-and-bg">
-    Texto y fondo en uno
-  </div>
-
-  <script src="app.js"></script>
+  <!-- <script src="app.js"></script> -->
 </body>
 </html>

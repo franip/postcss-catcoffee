@@ -1,0 +1,16 @@
+.btn {
+  @apply appearance-none px-3 py-2 bg-white font-medium rounded text-purple-800;
+  transition: all 200ms easeInCubic;
+
+  &:hover {
+    @apply bg-red-600 text-white
+  }
+
+  &.primary {
+    @apply bg-brand text-white;
+
+    &:hover {
+      @apply bg-brand-lighten-85 text-brand;
+    }
+  }
+}
